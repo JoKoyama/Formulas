@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_electricity_current"
+        android:layout_width="212dp"
+        android:layout_height="52dp"
+        android:text="@string/electricityFormulaCurrent"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText_electricity_current"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_electricity_resistance" />
+
+    <TextView
+        android:id="@+id/textview_electricity_voltage"
+        android:layout_width="212dp"
+        android:layout_height="52dp"
+        android:text="@string/electricityFormulaVoltage"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_electricity_resistance"
+        app:layout_constraintEnd_toStartOf="@+id/editText_electricity_voltage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_electricity_Formula" />
+
+    <TextView
+        android:id="@+id/textview_electricity_resistance"
+        android:layout_width="212dp"
+        android:layout_height="52dp"
+        android:text="@string/electricityFormulaResistance"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_electricity_current"
+        app:layout_constraintEnd_toStartOf="@+id/editText_electricity_resistance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_electricity_voltage" />
+
+    <TextView
+        android:id="@+id/textView_electricity_title"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/electricityFormulaString"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_electricity_Formula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_electricity_Formula"
+        android:layout_width="177dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/electricityFormula"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/textview_electricity_voltage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_electricity_title" />
+
+    <EditText
+        android:id="@+id/editText_electricity_current"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/electricityFormulaCurrent"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textview_electricity_current"
+        app:layout_constraintTop_toBottomOf="@+id/editText_electricity_resistance" />
+
+    <EditText
+        android:id="@+id/editText_electricity_resistance"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/electricityFormulaResistance"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editText_electricity_current"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textview_electricity_resistance"
+        app:layout_constraintTop_toBottomOf="@+id/editText_electricity_voltage" />
+
+    <EditText
+        android:id="@+id/editText_electricity_voltage"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="@string/electricityFormulaVoltage"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editText_electricity_resistance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textview_electricity_voltage"
+        app:layout_constraintTop_toBottomOf="@+id/textView_electricity_Formula" />
+</androidx.constraintlayout.widget.ConstraintLayout>

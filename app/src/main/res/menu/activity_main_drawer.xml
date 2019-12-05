@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"
+        >
+
+
         <item
             android:id="@+id/nav_pythag"
             android:icon="@drawable/ic_menu_triangle"
@@ -13,7 +16,12 @@
             android:id="@+id/nav_basic_addition"
             android:icon="@drawable/ic_menu_add"
             android:title="@string/menu_basic_addition" />
-
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_electricity"
+            android:icon="@drawable/ic_battery_charging_full_black_24dp"
+            android:title="Electricity"/>
     </group>
 
 

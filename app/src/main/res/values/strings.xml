@@ -15,4 +15,14 @@
     <string name="menu_send">Send</string>
     <string name="menu_pythagorean_theorem">Pathagorean Theroem</string>
     <string name="menu_basic_addition">Basic Addition</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="pythagoreanFormula">A\u00B2+B\u00B2=C\u00B2</string>
+    <string name="pythagoreanFormulaString">Pythagorean Formula</string>
+    <string name="electricityFormulaString">Electricity Formula</string>
+    <string name="electricityFormula">V = I x R</string>
+    <string name="electricityFormulaResistance">Resistance (R)</string>
+    <string name="electricityFormulaVoltage">Voltage (V)</string>
+    <string name="electricityFormulaCurrent">Current (I)</string>
 </resources>
